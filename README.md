@@ -36,7 +36,7 @@ The project simulates a simple policy evaluation setting: a subset of units (e.g
 
 ```bash
 python -m venv .venv
-source .venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 2. Install dependencies:
@@ -48,14 +48,14 @@ pip install -r requirements.txt
 3. Generate the synthetic panel dataset:
 
 ```bash
-python src/generate_data.py
+python source/generate_data.py
 ```
 This will create `data/processed/sim_panel.csv`.
 
 4. Run the difference-in-differences analysis:
 
 ```bash
-python src/analysis_diff_in_diff.py
+python source/analysis_diff_in_diff.py
 ```
 This will print summary tables to the console and save results (e.g., regression output) to `data/processed/` as needed.
 
@@ -72,6 +72,6 @@ This will print summary tables to the console and save results (e.g., regression
 
 --- 
 
-## Notes
+## Purpose
 
-This repo is intended as an illustrative coding sample for pre-doctoral and research assistant applications. It mirrors the kinds of tasks common in applied microeconomics and empirical social science research: data generation and cleaning, merging, panel structure, and causal estimation.
+This repository is intended as an illustrative coding sample for pre-doctoral and research assistant applications. It mirrors tasks common in applied microeconomics and empirical social science research: data generation and cleaning, panel data structure, and causal estimation with fixed effects.
