@@ -20,7 +20,7 @@ The project simulates a simple policy evaluation setting: a subset of units (e.g
 ├─ data/
 │   ├─ raw/
 │   └─ processed/
-├─ src/
+├─ source/
 │   ├─ generate_data.py
 │   ├─ analysis_diff_in_diff.py
 │   └─ utils.py
